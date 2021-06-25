@@ -13,9 +13,10 @@ It will help to similar work used across the board in one spot.
   spec.ios.deployment_target = "13.0"
   spec.swift_version = "5.0"
   spec.source        = { :git => "https://github.com/NomahCoffee/NCUtils.git", :tag => "#{spec.version}" }
+  spec.source_files  = "NCUtils/**/*.{h,m,swift}"
 
   spec.subspec 'TextFields' do |ss|
-    ss.source_files = 'NCUtils/**/*.swift'
+    ss.source_files = 'NCUtils/TextFields/**/*.swift'
   end
 
 end
