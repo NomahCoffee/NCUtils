@@ -16,6 +16,10 @@
 		315B1FD9268602D8002832DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315B1FD7268602D8002832DE /* Main.storyboard */; };
 		315B1FDB268602DC002832DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315B1FDA268602DC002832DE /* Assets.xcassets */; };
 		315B1FDE268602DC002832DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315B1FDC268602DC002832DE /* LaunchScreen.storyboard */; };
+		315B1FE52686093D002832DE /* NCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1FE42686093D002832DE /* NCTextField.swift */; };
+		315B1FE7268609AC002832DE /* NCEmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1FE6268609AC002832DE /* NCEmailTextField.swift */; };
+		315B1FE926860D36002832DE /* NCPasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1FE826860D36002832DE /* NCPasswordTextField.swift */; };
+		315B1FF1268626F7002832DE /* TextFields+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B1FF0268626F6002832DE /* TextFields+Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,10 @@
 		315B1FDA268602DC002832DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		315B1FDD268602DC002832DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		315B1FDF268602DC002832DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		315B1FE42686093D002832DE /* NCTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCTextField.swift; sourceTree = "<group>"; };
+		315B1FE6268609AC002832DE /* NCEmailTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCEmailTextField.swift; sourceTree = "<group>"; };
+		315B1FE826860D36002832DE /* NCPasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCPasswordTextField.swift; sourceTree = "<group>"; };
+		315B1FF0268626F6002832DE /* TextFields+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextFields+Constants.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,7 @@
 		315B1F93268601B0002832DE /* NCUtils */ = {
 			isa = PBXGroup;
 			children = (
+				315B1FE3268608A7002832DE /* TextFields */,
 				315B1F94268601B0002832DE /* NCUtils.h */,
 				315B1F95268601B0002832DE /* Info.plist */,
 			);
@@ -121,6 +130,17 @@
 				315B1FDF268602DC002832DE /* Info.plist */,
 			);
 			path = NCUtilsExample;
+			sourceTree = "<group>";
+		};
+		315B1FE3268608A7002832DE /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				315B1FE42686093D002832DE /* NCTextField.swift */,
+				315B1FE6268609AC002832DE /* NCEmailTextField.swift */,
+				315B1FE826860D36002832DE /* NCPasswordTextField.swift */,
+				315B1FF0268626F6002832DE /* TextFields+Constants.swift */,
+			);
+			path = TextFields;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +221,7 @@
 				TargetAttributes = {
 					315B1F90268601B0002832DE = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					315B1F99268601B1002832DE = {
 						CreatedOnToolsVersion = 12.5;
@@ -262,6 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315B1FE52686093D002832DE /* NCTextField.swift in Sources */,
+				315B1FF1268626F7002832DE /* TextFields+Constants.swift in Sources */,
+				315B1FE7268609AC002832DE /* NCEmailTextField.swift in Sources */,
+				315B1FE926860D36002832DE /* NCPasswordTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +463,7 @@
 		315B1FA6268601B1002832DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 92DETN2MKQ;
@@ -454,6 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.calebrudnicki.NCUtils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +489,7 @@
 		315B1FA7268601B1002832DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 92DETN2MKQ;
@@ -486,6 +514,7 @@
 		315B1FA9268601B1002832DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92DETN2MKQ;
 				INFOPLIST_FILE = NCUtilsTests/Info.plist;
@@ -504,6 +533,7 @@
 		315B1FAA268601B1002832DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 92DETN2MKQ;
 				INFOPLIST_FILE = NCUtilsTests/Info.plist;
