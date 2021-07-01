@@ -13,7 +13,7 @@ internal struct Constants {
     /// Holds all of the color constants
     struct Color {
         /// The color used when a text field is completely satified
-        static let fulfilled: CGColor = UIColor.secondaryLabel.cgColor
+        static let fulfilled: CGColor = UIColor.label.cgColor
         
         /// The color used when a text field is not yet completely satisfied
         static let unfulfilled: CGColor = UIColor.red.cgColor

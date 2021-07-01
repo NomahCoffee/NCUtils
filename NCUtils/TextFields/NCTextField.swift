@@ -83,7 +83,7 @@ open class NCTextField: UITextField {
     ///
     /// Override this function to change the functionality of events that occurs
     /// when a text field did change. In its basic form, this function fulfills
-    /// a text field if the number of characters is greater than 3.
+    /// a text field if the number of characters is greater than 2.
     @objc internal func textFieldDidChange() {
         guard let text = text else { return }
         
@@ -93,7 +93,7 @@ open class NCTextField: UITextField {
     /// This function is fired any time a user first taps into the text field.
     ///
     /// In its basic form, this function fulfills a text field if the number of
-    /// characters is greater than 3 and it also increases the border width of
+    /// characters is greater than 2 and it also increases the border width of
     /// the text field.
     @objc internal func textFieldDidBeginEditing() {
         guard let text = text else { return }
