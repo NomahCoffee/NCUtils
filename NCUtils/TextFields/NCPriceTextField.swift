@@ -10,6 +10,14 @@ import UIKit
 /// A text field that supports price entries. Text in this
 /// text field must meet the requirements to be a valid price.
 public final class NCPriceTextField: NCTextField {
+    
+    // MARK: Properties
+    
+    /// The `Double` representation of the vlaue displayed in the text field.
+    /// Use this value to convert the value in the text field to a usable value type.
+    ///
+    /// Examples: `$1.22` -> `1.22`, `$19.95` -> `19.95`
+    public var doubleValue: Double = 0.0
 
     // MARK: Init
     
@@ -23,11 +31,14 @@ public final class NCPriceTextField: NCTextField {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: Action Functions
+    
     override internal func textFieldDidChange() {
         guard let text = text else { return }
         
         self.text = text.usdFormatted
         isFulfilled = text.usdFormatted != ""
+        doubleValue = Double(text.usdFormatted.replacingOccurrences(of: "$", with: "")) ?? 0.0
     }
 
 }

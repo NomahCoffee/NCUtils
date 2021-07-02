@@ -60,7 +60,7 @@ class ViewController: UIViewController {
         stack.addArrangedSubview(textField2)
         stack.addArrangedSubview(textField3)
         stack.addArrangedSubview(textField4)
-
+        
         view.addSubview(stack)
         view.addSubview(textView1)
         
