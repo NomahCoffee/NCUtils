@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     let textField1: NCTextField = {
         let textField = NCTextField()
-        textField.placeholder = "Normal"
+        textField.placeholder = "Standard"
         return textField
     }()
     
@@ -33,12 +33,14 @@ class ViewController: UIViewController {
     let textField4: NCPriceTextField = {
         let textField = NCPriceTextField()
         textField.placeholder = "Price"
+        textField.setText(with: 3.0)
         return textField
     }()
     
     let textView1: NCTextView = {
         let textView = NCTextView()
         textView.placeholder = "Description"
+        textView.text = "This is my description"
         textView.translatesAutoresizingMaskIntoConstraints = false
         return textView
     }()
