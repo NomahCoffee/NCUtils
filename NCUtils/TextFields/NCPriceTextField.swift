@@ -42,6 +42,7 @@ public final class NCPriceTextField: NCTextField {
     /// - Parameter price: a `Double` value of the preset dollar amount to be set the text field with
     public func setText(with price: Double) {
         self.text = price.usdFormatted
+        doubleValue = price
     }
     
     // MARK: Action Functions
