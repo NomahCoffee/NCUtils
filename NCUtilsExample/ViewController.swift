@@ -58,13 +58,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        stack.addArrangedSubview(textField1)
-        stack.addArrangedSubview(textField2)
-        stack.addArrangedSubview(textField3)
-        stack.addArrangedSubview(textField4)
-        
-        view.addSubview(stack)
-        view.addSubview(textView1)
+        stack.addArrangedSubviews([textField1, textField2, textField3, textField4])
+        view.addSubviews([stack, textView1])
         
         NSLayoutConstraint.activate([
             stack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8),
