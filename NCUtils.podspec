@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "NCUtils"
-  spec.version      = "1.4"
+  spec.version      = "1.4.1"
   spec.summary      = "A utility framework for all Nomah Coffee iOS host applications."
   spec.description  = <<-DESC
 This library is an all-in-one utility library for any Nomah Coffee iOS applications. 
