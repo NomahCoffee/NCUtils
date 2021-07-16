@@ -24,6 +24,13 @@
 		31806509268BB66B00E1B82C /* NCTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31806508268BB66B00E1B82C /* NCTextView.swift */; };
 		822CA0D526979DDB00BD6EFE /* NCUtils+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822CA0D426979DDB00BD6EFE /* NCUtils+UIView.swift */; };
 		822CA0D726979EC600BD6EFE /* NCUtils+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822CA0D626979EC600BD6EFE /* NCUtils+UIStackView.swift */; };
+		82FAAA1326A1FE19006E3E28 /* Oxygen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82FAAA1026A1FE18006E3E28 /* Oxygen-Bold.ttf */; };
+		82FAAA1426A1FE19006E3E28 /* Oxygen-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82FAAA1126A1FE19006E3E28 /* Oxygen-Light.ttf */; };
+		82FAAA1526A1FE19006E3E28 /* Oxygen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82FAAA1226A1FE19006E3E28 /* Oxygen-Regular.ttf */; };
+		82FAAA1726A1FE29006E3E28 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FAAA1626A1FE29006E3E28 /* FontManager.swift */; };
+		82FAAA1926A1FE4F006E3E28 /* FontConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FAAA1826A1FE4F006E3E28 /* FontConstants.swift */; };
+		82FAAA1C26A1FEB5006E3E28 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FAAA1B26A1FEB5006E3E28 /* ColorConstants.swift */; };
+		82FAAA1E26A1FF2E006E3E28 /* NCUtils+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FAAA1D26A1FF2E006E3E28 /* NCUtils+UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +66,13 @@
 		31806508268BB66B00E1B82C /* NCTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCTextView.swift; sourceTree = "<group>"; };
 		822CA0D426979DDB00BD6EFE /* NCUtils+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NCUtils+UIView.swift"; sourceTree = "<group>"; };
 		822CA0D626979EC600BD6EFE /* NCUtils+UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NCUtils+UIStackView.swift"; sourceTree = "<group>"; };
+		82FAAA1026A1FE18006E3E28 /* Oxygen-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Oxygen-Bold.ttf"; path = "../../../../Downloads/Oxygen/Oxygen-Bold.ttf"; sourceTree = "<group>"; };
+		82FAAA1126A1FE19006E3E28 /* Oxygen-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Oxygen-Light.ttf"; path = "../../../../Downloads/Oxygen/Oxygen-Light.ttf"; sourceTree = "<group>"; };
+		82FAAA1226A1FE19006E3E28 /* Oxygen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Oxygen-Regular.ttf"; path = "../../../../Downloads/Oxygen/Oxygen-Regular.ttf"; sourceTree = "<group>"; };
+		82FAAA1626A1FE29006E3E28 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		82FAAA1826A1FE4F006E3E28 /* FontConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontConstants.swift; sourceTree = "<group>"; };
+		82FAAA1B26A1FEB5006E3E28 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		82FAAA1D26A1FF2E006E3E28 /* NCUtils+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NCUtils+UIColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +124,8 @@
 		315B1F93268601B0002832DE /* NCUtils */ = {
 			isa = PBXGroup;
 			children = (
+				82FAAA1A26A1FEA9006E3E28 /* Colors */,
+				82FAAA0F26A1FE00006E3E28 /* Fonts */,
 				315B1FE3268608A7002832DE /* TextFields */,
 				822CA0D326979DC200BD6EFE /* Extensions */,
 				315B1F94268601B0002832DE /* NCUtils.h */,
@@ -159,8 +175,29 @@
 			children = (
 				822CA0D426979DDB00BD6EFE /* NCUtils+UIView.swift */,
 				822CA0D626979EC600BD6EFE /* NCUtils+UIStackView.swift */,
+				82FAAA1D26A1FF2E006E3E28 /* NCUtils+UIColor.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		82FAAA0F26A1FE00006E3E28 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				82FAAA1626A1FE29006E3E28 /* FontManager.swift */,
+				82FAAA1826A1FE4F006E3E28 /* FontConstants.swift */,
+				82FAAA1026A1FE18006E3E28 /* Oxygen-Bold.ttf */,
+				82FAAA1126A1FE19006E3E28 /* Oxygen-Light.ttf */,
+				82FAAA1226A1FE19006E3E28 /* Oxygen-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		82FAAA1A26A1FEA9006E3E28 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				82FAAA1B26A1FEB5006E3E28 /* ColorConstants.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +313,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82FAAA1526A1FE19006E3E28 /* Oxygen-Regular.ttf in Resources */,
+				82FAAA1326A1FE19006E3E28 /* Oxygen-Bold.ttf in Resources */,
+				82FAAA1426A1FE19006E3E28 /* Oxygen-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,9 +347,13 @@
 				315B1FE52686093D002832DE /* NCTextField.swift in Sources */,
 				315B1FF1268626F7002832DE /* TextFields+Constants.swift in Sources */,
 				31806509268BB66B00E1B82C /* NCTextView.swift in Sources */,
+				82FAAA1C26A1FEB5006E3E28 /* ColorConstants.swift in Sources */,
+				82FAAA1726A1FE29006E3E28 /* FontManager.swift in Sources */,
 				315B1FE7268609AC002832DE /* NCEmailTextField.swift in Sources */,
+				82FAAA1926A1FE4F006E3E28 /* FontConstants.swift in Sources */,
 				315B1FE926860D36002832DE /* NCPasswordTextField.swift in Sources */,
 				822CA0D526979DDB00BD6EFE /* NCUtils+UIView.swift in Sources */,
+				82FAAA1E26A1FF2E006E3E28 /* NCUtils+UIColor.swift in Sources */,
 				31806507268BA5B800E1B82C /* NCPriceTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

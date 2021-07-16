@@ -15,18 +15,22 @@ class ViewController: UIViewController {
     let textField1: NCTextField = {
         let textField = NCTextField()
         textField.placeholder = "Standard"
+        textField.activeBorderColor = UIColor.white.cgColor
+        textField.backgroundColor = .systemGray2
         return textField
     }()
     
     let textField2: NCEmailTextField = {
         let textField = NCEmailTextField()
         textField.placeholder = "Email"
+        textField.backgroundColor = .systemGray2
         return textField
     }()
     
     let textField3: NCPasswordTextField = {
         let textField = NCPasswordTextField()
         textField.placeholder = "Password"
+        textField.backgroundColor = .systemGray2
         return textField
     }()
     
@@ -34,6 +38,7 @@ class ViewController: UIViewController {
         let textField = NCPriceTextField()
         textField.placeholder = "Price"
         textField.setText(with: 3.0)
+        textField.backgroundColor = .systemGray2
         return textField
     }()
     
@@ -41,6 +46,7 @@ class ViewController: UIViewController {
         let textView = NCTextView()
         textView.placeholder = "Description"
         textView.text = "This is my description"
+        textView.backgroundColor = .systemGray2
         textView.translatesAutoresizingMaskIntoConstraints = false
         return textView
     }()
@@ -57,6 +63,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = .systemGray
         
         stack.addArrangedSubviews([textField1, textField2, textField3, textField4])
         view.addSubviews([stack, textView1])
