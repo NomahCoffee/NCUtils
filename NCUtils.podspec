@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "NCUtils"
-  spec.version      = "1.3"
+  spec.version      = "1.4"
   spec.summary      = "A utility framework for all Nomah Coffee iOS host applications."
   spec.description  = <<-DESC
 This library is an all-in-one utility library for any Nomah Coffee iOS applications. 
@@ -21,7 +21,7 @@ It will help to aggregate similar work used across the board in one spot.
   end
   
   spec.subspec 'Fonts' do |ss|
-    ss.source_files = 'NCUtils/Fonts/**/*.swift'
+    ss.source_files = 'NCUtils/Fonts/**/*.{swift,ttf}'
     ss.dependency 'NCUtils/Extensions'
   end
   
